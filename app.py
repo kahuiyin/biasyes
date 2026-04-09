@@ -592,7 +592,7 @@ if not st.session_state.info_collected:
     with st.form("experimenter_form"):
         exp_name = st.text_input("姓名", placeholder="请输入您的姓名")
         exp_id = st.text_input("学号/学校", placeholder="请输入学号或学校名称")
-        exp_gender = st.radio("性别", ["男", "女", "不愿透露"], horizontal=True)
+        exp_gender = st.radio("性别", ["男", "女"], horizontal=True)
         exp_age = st.number_input("年龄", min_value=18, max_value=100, step=1, value=25)
         exp_major = st.text_input("专业", placeholder="填写专业名称或已就业")
         exp_education = st.selectbox("最高学历", ["本科", "硕士", "博士", "其他"])
